@@ -1,4 +1,6 @@
 -- task_3.sql
--- Lists all tables in the selected database (database passed to mysql command)
+-- Task 3: List all tables in alx_book_store
+
+USE alx_book_store;
 
 SHOW TABLES;
