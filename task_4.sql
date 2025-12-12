@@ -1,8 +1,6 @@
 -- task_4.sql
--- Task 4: Full description of the books table
--- No DESCRIBE or EXPLAIN used
-
-USE alx_book_store;
+-- Prints the full description of the table books
+-- DESCRIBE and EXPLAIN are NOT used
 
 SELECT
     COLUMN_NAME,
@@ -12,5 +10,4 @@ SELECT
     COLUMN_DEFAULT,
     EXTRA
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = 'alx_book_store'
-  AND TABLE_NAME = 'Books';
+WHERE TABLE_NAME = 'Books';
